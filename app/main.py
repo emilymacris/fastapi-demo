@@ -49,6 +49,15 @@ def add_me(number_1: int, number_2: int):
     sum = number_1 + number_2
     return {"sum": sum}
 
+@app.get("/multiply/{number_1}/{number_2}")
+def multiply_me(number_1: int, number_2: int):
+    product = number_1 * number_2
+    return {"product": product}
+
+
+
+
+
 # Let's develop a new one:
 @app.get("/divide/{number_1}/{number_2}")
 def divide_me(number_1: int, number_2: int):
