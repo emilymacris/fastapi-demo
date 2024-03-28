@@ -3,6 +3,7 @@
 ## Getting Started
 
 ### Gitpod - is the way I'll edit the project
+#test to see if branch is working
 
 The easiest way to start working is to append `https://gitpod.io/#` before the URL of your GitHub repository. This should look something like (but use the URL of your fork):
 
@@ -11,6 +12,7 @@ The easiest way to start working is to append `https://gitpod.io/#` before the U
 From within Gitpod, you have a full IDE to work with the code. You can run commands in the terminal, preview the application by running the `./preview.sh` script, and normal `git` add/commit/push commands.
 
 ### Local
+
 
 After forking this repository for your own work, you may need to set up an isolated environment in Python. I would suggest using `pipenv` for this:
 
