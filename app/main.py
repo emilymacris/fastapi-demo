@@ -76,6 +76,15 @@ def read_items(item_id: int, q: str = None, s: str = None):
     # - another api (external)
     return {"item_id": item_id, "q": q, "s": s}
 
+@app.get("/albums")
+def get_albums():
+        db = MySQLdb.connect(host=DBHOST, user=DBUSER, passwd=DBPASS, db=DB)
+        c = db.cursor(MySQLdb.cursors.DictCursor)
+        c.execute("""SELECT * FROM albums ORDER BY name""")
+        results = c.fetchall()
+        return results
+
+
 
 ## Data Modeling
 # Model data you are expecting.
